@@ -1,0 +1,28 @@
+.aceptar{
+    color: chartreuse;
+    align-self: flex-end;
+}
+.borrar{
+    color: crimson;
+}
+.lista{
+    align-items:flex-end;
+    align-content: flex-end;
+    
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
+  }
+  .button-container{
+    justify-content: right;
+    justify-items: right;
+    align-content: flex-end;
+    text-align: right;
+    align-items: flex-end;
+
+  }

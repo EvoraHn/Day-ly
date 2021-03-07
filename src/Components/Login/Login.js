@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Form from "../Forms/Form";
 import FormField from "../Forms/FormField";
 import FormAction from "../Forms/FormAction";
+//import "./loginBlack.css";
 
 function Login(){
   const [formData, setFormData] = useState({
@@ -24,43 +25,60 @@ function Login(){
   }
   return (
     
-    <Form>
-      <FormField
-        type="text"
-        id="username"
-        fname="username"
-        onChange={myOnChange}
-        caption="Correo Electrónico"
-        value={formData.username}
-        error={formData.usernameError}
-        placeholder="Tu correo"
-      ></FormField>
-      <FormField
-        type="password"
-        id="password"
-        fname="password"
-        onChange={myOnChange}
-        caption="Contraseña"
-        value={formData.password}
-        error={formData.passwordError}
-        placeholder="Contraseña"
-      ></FormField>
-       <FormAction
-        caption="Enviar"
-        onClick={
-          (e)=>{
-            e.preventDefault();
-            e.stopPropagation();
-            const { username, password } = formData;
-            alert(`Usuario:${username} Psswd:${password}`);
-          }
-        }
-      >
-      </FormAction>
-    </Form>
-    
-    
-    
+    <div class="container">
+       
+        <div>
+          <div class="img">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/13-time-date/daily-schedule.png"  alt="Animación " />
+          </div>
+
+        </div>
+        <div>
+        <Form>
+          <div>
+            <div>
+                <FormField
+                  type="text"
+                  id="username"
+                  fname="username"
+                  onChange={myOnChange}
+                  caption="Correo Electrónico"
+                  value={formData.username}
+                  error={formData.usernameError}
+                  placeholder="Tu correo"
+                 ></FormField>
+            </div>
+            <div>
+              <FormField
+                type="password"
+                id="password"
+                fname="password"
+                onChange={myOnChange}
+                caption="Contraseña"
+                value={formData.password}
+                error={formData.passwordError}
+                placeholder="Contraseña"
+              ></FormField>
+            </div>
+            <div>
+              <FormAction
+                caption="Enviar"
+                onClick={
+                  (e)=>{
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const { username, password } = formData;
+                    alert(`Usuario:${username} Psswd:${password}`);
+                  }
+                }
+              ></FormAction>
+            </div>
+            </div>
+            </Form>
+        </div>
+      
+    </div>
+   
   );
 }
 

@@ -4,17 +4,6 @@ header{
   align-items: center;
   margin: 0px;
   padding: 0.8rem;
-  background-color: rgb(255, 209, 6);
+  background-color: crimson;
   color: #fff;
-  
-}
-.logo{
- 
-  margin: 0px;
-  padding: 0.1rem;
-  width: 18vw;
-  height: auto;
-}
-.letras{
-  font-size: 5vw;
 }

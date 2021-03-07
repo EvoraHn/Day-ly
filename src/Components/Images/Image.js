@@ -1,7 +1,9 @@
 import "./Image.css";
-function Image({ title }){
+function Image({ img }){
   return (
-    <img src="https://cdn.pensador.com/img/imagens/pe/ns/pensador_domingo_a_tarde_c.jpg"  alt="PlaceHolder Img long1" />
+    <div class="border-4 border-light-blue-500 border-opacity-50">
+        
+    </div>
   );
 }
 export default Image;

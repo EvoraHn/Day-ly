@@ -35,7 +35,7 @@ function validacionDeLogin()
   if(login[0].nombreDeUsuario === "admin" && login[0].contraseña === "password" )
   {
     alert("Acceso permitido");
-    window.open("../index.html");
+    //window.open("../index.html");
     return true;
   }
   else

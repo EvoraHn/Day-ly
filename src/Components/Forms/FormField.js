@@ -1,7 +1,8 @@
-function FormField({ type, id, fname, onChange, caption, value, error, ...attr}){
+import "./Form.css";
+function FormField({ type, id, fname, onChange, caption, value, error, labelClassName, containerClassName, ...attr}){
   return (
-    <section>
-    <label>{caption}</label>
+    <section className={containerClassName}>
+    <label className={labelClassName}><div className="">{caption}</div></label>
     <input
         type={type}
         id={id}
