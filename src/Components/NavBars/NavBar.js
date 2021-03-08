@@ -3,7 +3,7 @@ import "./NavBar.css";
 function NavBar() {
   let dummyData = [
     { label: "Home", uri: "/" },
-    { label: "Todo's", uri: "/todos" },
+    { label: "Tareas", uri: "/todos" },
     { label: "Login", uri: "/login" },
   ];
   let navBarItems = dummyData.map((o, i)=>{

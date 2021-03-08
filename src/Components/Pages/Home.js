@@ -3,9 +3,12 @@ import Ejercicio from '../../assets/meme.jpg';
 function Home(){
   return (
     <section>
-      
-          <h4 class="Encabezado">Actividades Sugeridas</h4>
-          <br></br>
+          <section class="container-fluid  text-center p-1">
+            <br></br>
+            <p class="Encabezado">Actividades Sugeridas</p>
+            <br></br>
+          </section>
+         
           <div class="grid gap-0.001 grid-cols-2 md:grid-cols-2 p-2">
           
 

@@ -4,7 +4,15 @@ import { MdAdd } from 'react-icons/md';
 function NewTodo({ onChange, value, onAddNew}){
   return (
     <section className="TodoAddNew">
-      <div class="">
+      <div class="justify-center text-center">
+        <br></br>
+        <div>
+  
+</div>
+        <section>
+          <h6 class="">Lista de tareas por hacer</h6>
+        </section>
+        <br></br>
       <section className="flex justify-between w-screen px-4 border bg-gradient-to-d from-green-400 via-yellow-500 to-green-500 text-justify items-center justify-items-center">
         <FormField
           type="text"
@@ -12,7 +20,7 @@ function NewTodo({ onChange, value, onAddNew}){
           fname="txtNTodo"
           onChange={onChange}
           value={value}
-          caption="Nueva Tarea"
+          caption="Nueva tarea"
           className="flex p-2 m-2 w-5/6 bg-white shadow"
           labelClassName="flex w-5/6"
           containerClassName="flex"
